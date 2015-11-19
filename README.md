@@ -1,7 +1,7 @@
 # Xamarin Swipe Refresh Layout Demo
 Most apps that deal with online data have implemented a refresh mechanism. If you want to enable your users to trigger this on their own, providing a “swipe to refresh” implementation is a common and intuitive design pattern. Users can pull down from the top of a page to trigger the refresh. This has the best effect when it is added to a scrollable object like `ListView` or `ScrollView`.
 
-![](/images/logo.png)
+![](/Misc/swipetorefreshdemo.gif)
 
 ## Backwards compatibility
 First make sure that our app is backward compatible. To do so, add the Android Support Library v4 and v7 to your project and make sure that your activity inherits from `AppCompatActivity`. Additionally you need to use a style that inherits from a `Theme.AppCompat` version like the `Theme.AppCompat.Light.DarkActionBar` theme.
