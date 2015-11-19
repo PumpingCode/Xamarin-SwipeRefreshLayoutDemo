@@ -35,6 +35,10 @@ namespace SwipeRefreshLayoutDemo
             swipeContainer.SetColorSchemeResources(Android.Resource.Color.HoloBlueLight, Android.Resource.Color.HoloGreenLight, Android.Resource.Color.HoloOrangeLight, Android.Resource.Color.HoloRedLight);
             swipeContainer.Refresh += SwipeContainer_Refresh;
 
+            // Uncomment to following line if you want to show the loading indicator from the beginning
+            // It has to be delayed until the swipeContainer has been completely loaded to take effect
+            // swipeContainer.Post(() => { swipeContainer.Refreshing = true; });
+
             // Manually show refreshing indicator on button press
             FindViewById<Button>(Resource.Id.button).Click += async delegate(object sender, EventArgs e)
             {
